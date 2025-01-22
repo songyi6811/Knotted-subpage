@@ -1,0 +1,500 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Cafe24 Decobox';
+    src: url('./font/데코박스/Cafe24Decobox.eot');
+    src: url('./font/데코박스/Cafe24Decobox.eot?#iefix') format('embedded-opentype'),
+        url('./font/데코박스/Cafe24Decobox.woff2') format('woff2'),
+        url('./font/데코박스/Cafe24Decobox.woff') format('woff'),
+        url('./font/데코박스/Cafe24Decobox.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'TmoneyRoundWind';
+    src: url('./font/티머니체/TmoneyRoundWind-ExtraBoldA1.eot');
+    src: url('./font/티머니체/TmoneyRoundWind-ExtraBoldA1.eot?#iefix') format('embedded-opentype'),
+        url('./font/티머니체/TmoneyRoundWind-ExtraBoldA1.woff2') format('woff2'),
+        url('./font/티머니체/TmoneyRoundWind-ExtraBoldA1.woff') format('woff'),
+        url('./font/티머니체/TmoneyRoundWind-ExtraBoldA1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TmoneyRoundWind';
+    src: url('./font/티머니체/TmoneyRoundWind-RegularA1.eot');
+    src: url('./font/티머니체/TmoneyRoundWind-RegularA1.eot?#iefix') format('embedded-opentype'),
+        url('./font/티머니체/TmoneyRoundWind-RegularA1.woff2') format('woff2'),
+        url('./font/티머니체/TmoneyRoundWind-RegularA1.woff') format('woff'),
+        url('./font/티머니체/TmoneyRoundWind-RegularA1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: 'TmoneyRoundWind';
+}
+
+/* .header */
+.header{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-bottom: 200px;
+    background: url('../img/서브페이지-메인비주얼배경03.jpg') center center no-repeat;
+}
+.header .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header .inner .pc{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .mobile{
+    display: none;
+}
+.header .inner h1{
+    width: 125px;
+    height: 67px;
+}
+.header .inner h1 a{
+    width: 100%;
+    height: 100%;
+}
+.header .inner h1 a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header .pc_menu_bg{
+    width: 100%;
+    height: 200px;
+    background-color: #ffcbd571;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+    z-index: 9999;
+}
+.header .inner .nav .pc_menu{
+    display: flex;
+}
+.header .inner .nav .pc_menu>li{
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+}
+.header .inner .nav .pc_menu .depth01{
+    width: 150px;
+    height: 80px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+    line-height: 80px;
+}
+.header .inner .nav .pc_menu .depth01:hover{
+    font-weight: bold;
+}
+.header .inner .nav .pc_menu .pc_depth02{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: none;
+    z-index: 99999;
+}
+.header .inner .nav .pc_menu .pc_depth02 li{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #888;
+}
+.header .inner .nav .pc_menu .pc_depth02 li:hover{
+    font-weight: bold;
+}
+.header .inner .icon{
+    display: flex;
+    gap: 15px;
+}
+.header .inner .icon li{
+    width: 40px;
+    height: 40px;
+}
+.header .inner .icon li:hover{
+    opacity: 0.5;
+}
+.header .inner .icon li a{
+    width: 100%;
+    height: 100%;
+}
+.header .inner .icon li a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header .text{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Cafe24 Decobox';
+}
+.header .text h2{
+    font-size: 50px;
+}
+
+.knotted {
+    margin-bottom: 200px;
+}
+.knotted .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.knotted .inner .left h3{
+    font-size: 50px;
+    font-family: 'Cafe24 Decobox';
+    margin-bottom: 80px;
+}
+.knotted .inner .left p{
+    white-space: nowrap;
+    font-size: 18px;
+}
+.knotted .inner .left .text01{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.knotted .inner .left .text02{
+    margin-bottom: 30px;
+}
+
+.character{
+    width: 100%;
+    height: 800px;
+    margin-bottom: 300px;
+    background: url('../img/캐릭터-배경이미지.png') center center no-repeat;
+}
+.character .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.character .inner .right h3{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cafe24 Decobox';
+    margin-bottom: 80px;
+}
+.character .inner .right .text01{
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.character .inner .right .text02{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.textwrap{
+    width: 100%;
+    height: 850px;
+    margin-bottom: 200px;
+}
+.textwrap .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.textwrap .inner p{
+    font-weight: bold;
+    font-size: 180px;
+    font-family: 'Cafe24 Decobox';
+}
+.textwrap .inner .intext01{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+.textwrap .inner .intext01::before{
+    content: '';
+    width: 100px;
+    height: 109px;
+    display: block;
+    background: url('../img/도넛-이모티콘.png') center center no-repeat;
+    position: absolute;
+    top: -75px;
+    left: 140px;
+}
+.textwrap .inner .intext02{
+    position: absolute;
+    top: 250px;
+    right: 0%;
+}
+.textwrap .inner .intext02::before{
+    content: '';
+    width: 130px;
+    height: 85px;
+    display: block;
+    background: url('../img/도넛-이모티콘006.png') center center no-repeat;
+    position: absolute;
+    top: -50px;
+    left: 360px;
+}
+.textwrap .inner .intext03{
+    position: absolute;
+    top: 430px;
+    left: 0%;
+}
+.textwrap .inner .intext03::before{
+    content: '';
+    width: 100px;
+    height: 112px;
+    display: block;
+    background: url('../img/도넛-이모티콘003.png') center center no-repeat;
+    position: absolute;
+    top: -70px;
+    left: 20px;
+}
+.textwrap .inner .intext04{
+    position: absolute;
+    top: 680px;
+    right: 30%;
+    transform: translateX(20%);
+}
+.textwrap .inner .intext04::before{
+    content: '';
+    width: 107px;
+    height: 102px;
+    display: block;
+    background: url('../img/도넛-이모티콘002.png') center center no-repeat;
+    position: absolute;
+    top: -65px;
+    right: 3px;
+}
+
+.collabo{
+    background: url('../img/Rectangle\ 1.png') center center no-repeat;
+    width: 100%;
+    height: 1000px;
+    padding-top: 5px;
+    margin-bottom: 200px;
+}
+.collabo .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+.collabo .inner h3{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cafe24 Decobox';
+    margin-bottom: 80px;
+}
+.collabo .inner .itemwrap{
+    display: flex;
+    justify-content: center;
+}
+.collabo .inner .itemwrap .item{
+}
+.collabo .inner .itemwrap .item img{
+    width: 460px;
+}
+.collabo .inner .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.collabo .inner .btn button{
+    display: block;
+    width: 240px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FFC8E1;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'TmoneyRoundWind';
+}
+.collabo .inner .btn button:hover{
+    background-color: #BEE1F0;
+}
+
+.identity .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.identity .inner h3{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Cafe24 Decobox';
+    margin-bottom: 80px;
+}
+.identity .inner .wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.identity .inner .wrap .left{
+    width: 100%;
+    text-align: center;
+}
+.identity .inner .wrap .left .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.identity .inner .wrap .left .content{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.identity .inner .wrap .right{
+    width: 100%;
+    text-align: center;
+}
+.identity .inner .wrap .right .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.identity .inner .wrap .right .content{
+    font-size: 18px;
+    margin-bottom: 150px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 1021px;
+    background: url('../img/footer-bg.jpg') center center no-repeat;
+    font-size: 14PX;
+    position: relative;
+}
+footer .inner{
+    max-width: 1440px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+}
+footer .inner .text_wrap{
+    padding-top: 300px;
+}
+footer .inner .text_wrap .text{
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+footer .inner .text_wrap .text h4{
+    margin-bottom: 10px;
+}
+footer .inner .text_wrap .text03{
+    margin-bottom: 50px;
+}
+footer .inner .text_wrap .text03 a{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+footer .inner .text_wrap .text03 a:hover{
+    font-weight: bold;
+}
+footer .inner .text_wrap .text03 a img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+footer .inner .service_text{
+    display: flex;
+    gap: 15px;
+    color: #666;
+}
+footer .inner .service_text a:hover{
+    font-weight: bold;
+}
+footer .inner .kakao_channel{
+    width: 583px;
+    height: 347px;
+    position: absolute;
+    top: 100px;
+    right: 300px;
+    background: url('../img/Cloud\ \(3\).png') center center no-repeat;
+}
+footer .inner .kakao_channel .text{
+    padding-top: 50px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer .inner .kakao_channel .text h3{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+footer .inner .kakao_channel .text p{
+    text-align: center;
+    margin-bottom: px;
+    line-height: 25px;
+    font-size: 16px;
+}
+footer .inner .kakao_channel .btn{
+    margin: 0 auto;
+    width: 237px;
+    height: 59px;
+    background-color: #fff1a0;
+    text-align: center;
+    line-height: 59px;
+    border-radius: 50px;
+    font-size: 16px;
+    display: block;
+}
+footer .inner .kakao_channel .btn:hover{
+    background-color: #FFC8E1;
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'TmoneyRoundWind';
+    src: url('font/티머니체/TmoneyRoundWind-ExtraBoldA1.eot');
+    src: url('font/티머니체/TmoneyRoundWind-ExtraBoldA1.eot?#iefix') format('embedded-opentype'),
+        url('font/티머니체/TmoneyRoundWind-ExtraBoldA1.woff2') format('woff2'),
+        url('font/티머니체/TmoneyRoundWind-ExtraBoldA1.woff') format('woff'),
+        url('font/티머니체/TmoneyRoundWind-ExtraBoldA1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TmoneyRoundWind';
+    src: url('font/티머니체/TmoneyRoundWind-RegularA1.eot');
+    src: url('font/티머니체/TmoneyRoundWind-RegularA1.eot?#iefix') format('embedded-opentype'),
+        url('font/티머니체/TmoneyRoundWind-RegularA1.woff2') format('woff2'),
+        url('font/티머니체/TmoneyRoundWind-RegularA1.woff') format('woff'),
+        url('font/티머니체/TmoneyRoundWind-RegularA1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

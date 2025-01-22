@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Cafe24 Decobox';
+    src: url('font/데코박스/Cafe24Decobox.eot');
+    src: url('font/데코박스/Cafe24Decobox.eot?#iefix') format('embedded-opentype'),
+        url('font/데코박스/Cafe24Decobox.woff2') format('woff2'),
+        url('font/데코박스/Cafe24Decobox.woff') format('woff'),
+        url('font/데코박스/Cafe24Decobox.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
